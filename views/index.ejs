@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>希釈量計算プログラム</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>希釈量計算プログラム</h1>
+
+      <div class="in-val">
+        <form class="" action="/calculate" method="post">
+          <p>原液の濃度[mg/ml]</p>
+          <input type="text" name="undilutedSolution"/>
+
+          <p>作りたい濃度[mg/ml]</p>
+          <input type="text" name="wantDencity"/>
+
+          <p>加える水の量を決める[ml]</p>
+          <input type="text" name="useWater"/>
+
+          <input type="submit" value="計算する" />
+          <input type="reset" value="リセットする" />
+        </form>
+      </div>
+
+      <div class="out-value">
+          <p>加える水に対して必要な原液の量[ml]：</p>
+          <span></span>
+          <p>※原液1[ml]に対して薄めるのに必要な水の量：</p>
+          <span></span>
+      </div>
+    </div>
+
+  </body>
+</html>
